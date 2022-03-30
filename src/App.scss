@@ -8,20 +8,33 @@
   padding: 1rem 2rem;
   border-bottom:  1px solid gray;
 }
+.mar{ 
+  margin-top: 10px;
+}
 
 .sidebar {
   width: 14rem;
   height: calc(100vh - 50px);
   border-right: 1px solid black;
   ul {
+    list-style: none;
     padding-bottom: 1rem 2rem;
+    margin-left: 2rem;
   }
     li{
       margin-bottom: 1rem;
+    }
+    a{
+      text-decoration: none;
     }
     
 }
 
 .flex {
   display: flex;
+}
+.components {
+  margin-left: 1px;
+  width:100%;
+  height:100vh; 
 }

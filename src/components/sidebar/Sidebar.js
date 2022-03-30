@@ -5,11 +5,11 @@ const Sidebar = () => {
      
         <div className="sidebar">
             <ul>
-                <li>
+                <li   className="mar">
                     <Link to="/" >Inicio</Link>
                 </li>
                 <li>
-                    <Link to="/asignaturas">Asignaturas</Link>
+                    <Link to="/materias">Materias</Link>
                 </li>
                 <li>
                     <Link to="/alumnos">Alumnos</Link>

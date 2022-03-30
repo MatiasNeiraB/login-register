@@ -1,9 +1,10 @@
+import { Nav } from "react-bootstrap"
 const Home = () => {
-    return(
+    return (
         <div>
-            <p>Home</p>
+            
         </div>
     )
-    }
-    
-    export default Home
+}
+
+export default Home

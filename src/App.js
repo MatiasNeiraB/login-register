@@ -1,22 +1,24 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
-import Navbar from './components/navbar/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComp from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
 import Home from './pages/Home';
-import Asignaturas from './pages/Asignaturas';
+import Materias from './pages/Materias';
 import Alumnos from './pages/Alumnos';
+
 
 
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <NavbarComp />
       <div className='flex'>
         <Sidebar />
-        <div className='content' >
+        <div className='content components' >
           <Route path='/' exact={true} component={Home} />
-          <Route path='/asignaturas' exact={true} component={Asignaturas} />
+          <Route path='/materias' exact={true} component={Materias} />
           <Route path='/alumnos' exact={true} component={Alumnos} />
         </div>
       </div>
